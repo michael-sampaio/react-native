@@ -2,7 +2,8 @@ import { StyleSheet } from 'react-native';
 
 export const style = StyleSheet.create({
     header: {
-        height: '9%',
+        height: '11%',
+        maxWidth: 450,
         backgroundColor: "#24145f"
     },
     symbol: {
@@ -10,10 +11,11 @@ export const style = StyleSheet.create({
         width: '100%',
     },
     menu: {
+        maxWidth: 450,
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: "space-evenly",
-        height: '7%',
+        height: '9%',
         backgroundColor: '#997610',
         alignContent: 'center',
     },
@@ -34,12 +36,14 @@ export const style = StyleSheet.create({
         fontFamily: 'OpenSans_400Regular',
     },
     banner1: {
-        height: '13%',
+        maxWidth: 450,
+        height: '20%',
         backgroundColor: '#282828'
     },
     banner2: {
+        maxWidth: 450,
         marginTop: 10,
-        height: "33%",
+        height: "55%",
         backgroundColor: '#997610'
     },
     bannerImage: {
@@ -48,6 +52,7 @@ export const style = StyleSheet.create({
         width: '100%',
     },
     categories: {
+        maxWidth: 450,
         height: '30%',
         flexDirection: 'row',
         flexWrap: 'wrap',
@@ -77,6 +82,7 @@ export const style = StyleSheet.create({
         fontFamily: 'OpenSans_400Regular',
     },
     highlight: {
+        maxWidth: 450,
         fontWeight: "bold",
         fontSize: 30,
         justifyContent: "center",
@@ -87,6 +93,7 @@ export const style = StyleSheet.create({
         fontFamily: 'OpenSans_400Regular',
     },
     card: {
+        maxWidth: 450,
         flexWrap: 'wrap',
         flexDirection: "row",
         justifyContent: 'space-around',
@@ -102,10 +109,12 @@ export const style = StyleSheet.create({
         fontFamily: 'OpenSans_400Regular',        
     },
     assurance: {
+        maxWidth: 450,
         marginTop: 30,
-        height: 180,
+        height: '40%',
     },
     footer: {
+        maxWidth: 450,
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: "space-evenly",

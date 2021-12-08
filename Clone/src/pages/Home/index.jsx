@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { View, ScrollView, Text } from 'react-native';
+import { View, Text, ScrollView } from 'react-native';
 import { styles } from './styles';
 import { style } from '../../components/componentStyles';
 import Button from '../../components/Button';
@@ -25,6 +25,7 @@ export default function Home() {
                 <Menu title='More' />
                 <Menu title={<Ionicons name="search" size={24} color="white" />}/> 
             </View>
+            <ScrollView>
                 <Banner1 />
                 <Banner2 />
                 <View style={style.categories}>
@@ -34,10 +35,10 @@ export default function Home() {
                     <Button title='VIEW ALL' />
                 </View>
                 <View style={style.highlight}>
-                    <Text>SHOP BY BRAND</Text>
+                    <Text style={style.highlight}>SHOP BY BRAND</Text>
                 </View>
                 <View style={style.highlight}>
-                    <Text>SHOP BY PLAYER</Text>
+                    <Text style={style.highlight}>SHOP BY PLAYER</Text>
                 </View>
                 <View style={style.card}>
                     <Card number='#8' style={style.cardText} />
@@ -46,6 +47,7 @@ export default function Home() {
                     <Card number='#89' style={style.cardText} />
                 </View>
                 <Assurance />
+                </ScrollView>
                 <Footer/>
         </View>
     );
