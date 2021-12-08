@@ -5,6 +5,13 @@ export const styles = StyleSheet.create({
         backgroundColor: '#24145f',
         color: '#fff',
     },
+    container: {
+      flex: 1,
+      maxWidth: 450,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
     scrollView: {
        backgroundColor: '#24145f', 
     }, 
