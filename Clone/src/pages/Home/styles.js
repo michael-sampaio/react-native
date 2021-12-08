@@ -7,9 +7,8 @@ export const styles = StyleSheet.create({
     },
     container: {
       flex: 1,
-      maxWidth: 450,
+      maxWidth: '480px',
       backgroundColor: '#fff',
-      alignItems: 'center',
       justifyContent: 'center',
     },
     scrollView: {

@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export const style = StyleSheet.create({
     header: {
-        height: '11%',
+        height: '9%',
         backgroundColor: "#24145f"
     },
     symbol: {
@@ -13,7 +13,7 @@ export const style = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: "space-evenly",
-        height: '9%',
+        height: '6%',
         backgroundColor: '#997610',
         alignContent: 'center',
     },
@@ -58,7 +58,7 @@ export const style = StyleSheet.create({
     },
     button: {
         width: '40%',
-        height: '25%',
+        height: '40%',
         alignItems: 'center',
         justifyContent: 'center',
         paddingVertical: 2,
@@ -85,6 +85,7 @@ export const style = StyleSheet.create({
         alignItems: "center",
         color: '#20174e',
         backgroundColor: '#fff',
+        marginTop: 10,
         marginBottom: 20,
         fontFamily: 'OpenSans_400Regular',
     },
@@ -104,6 +105,7 @@ export const style = StyleSheet.create({
         fontFamily: 'OpenSans_400Regular',        
     },
     assurance: {
+        resizeMode: 'contain',
         marginTop: 30,
         height: '40%',
     },
