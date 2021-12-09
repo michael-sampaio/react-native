@@ -1,8 +1,13 @@
-import { StyleSheet } from 'react-native';
+import { StatusBar, StyleSheet } from 'react-native';
+
+const STATUSBAR_HEIGHT = Platform.OS === 'android' ? 20 : StatusBar.currentHeight;
 
 export const style = StyleSheet.create({
+    statusBar: {
+        height: STATUSBAR_HEIGHT,
+    },
     header: {
-        height: '9%',
+        height: 80,
         backgroundColor: "#24145f"
     },
     symbol: {
@@ -13,35 +18,35 @@ export const style = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: "space-evenly",
-        height: '6%',
+        height: 65,
         backgroundColor: '#997610',
         alignContent: 'center',
     },
     menuButton: {
-        height: '80%',
+        height: 50,
         justifyContent: 'center',
+        alignItems: 'center',
         paddingVertical: 2,
         paddingHorizontal: 4,
         elevation: 3,
-        maxWidth: '20%',
+        width: 70,
     },
     menuText: {
         alignItems: 'center',
-        fontSize: 18,
-        lineHeight: 0,
+        fontSize: 16,
         letterSpacing: 0.25,
         color: '#fff',
         fontFamily: 'OpenSans_400Regular',
     },
     banner1: {
         resizeMode: 'contain',
-        height: '20%',
+        height: 69,
         backgroundColor: '#282828'
     },
     banner2: {
         resizeMode: 'contain',
         marginTop: 10,
-        height: "55%",
+        height: 164,
         backgroundColor: '#997610'
     },
     bannerImage: {
@@ -50,15 +55,17 @@ export const style = StyleSheet.create({
         width: '100%',
     },
     categories: {
-        height: '30%',
+        height: 120,
         flexDirection: 'row',
         flexWrap: 'wrap',
-        marginTop: 50,
+        marginTop: 40,
+        marginBottom: 20,
         justifyContent: "space-evenly",
     },
     button: {
         width: '40%',
         height: '40%',
+        marginBottom: 20,
         alignItems: 'center',
         justifyContent: 'center',
         paddingVertical: 2,
@@ -70,8 +77,7 @@ export const style = StyleSheet.create({
         borderColor: '#997610',
     },
     text: {
-        fontSize: 17,
-        lineHeight: 0,
+        fontSize: 14,
         fontWeight: 'bold',
         fontStyle: 'italic',
         letterSpacing: 0.25,
@@ -92,29 +98,28 @@ export const style = StyleSheet.create({
     card: {
         flexWrap: 'wrap',
         flexDirection: "row",
-        justifyContent: 'space-around',
-        alignContent: 'space-around',
         backgroundColor: "#eeeeee",
         height: 100,
+        justifyContent: 'space-around',
     },
     cardText: {
         fontSize: 45,
         fontWeight: 'bold',
         letterSpacing: 0.25,
         color: '#20174e',
-        fontFamily: 'OpenSans_400Regular',        
+        fontFamily: 'OpenSans_400Regular',
     },
     assurance: {
         resizeMode: 'contain',
         marginTop: 30,
-        height: '40%',
+        height: 140,
     },
     footer: {
         flexDirection: 'row',
         flexWrap: 'wrap',
-        justifyContent: "space-evenly",
-        height: 50,
+        justifyContent: "space-around",
+        height: 40,
         backgroundColor: "#24145f",
-        alignContent: 'center',
+        alignItems: 'flex-end'
     },
 });

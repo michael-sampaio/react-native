@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import { styles } from './styles';
@@ -12,17 +11,19 @@ import Banner2 from '../../components/Banner2';
 import Assurance from '../../components/Assurance';
 import Footer from '../../components/Footer.jsx';
 import { Ionicons } from '@expo/vector-icons';
+import StatusBar from '../../components/StatusBar';
 
 export default function Home() {
     return (
         <View style={styles.container}>
+            <StatusBar barStyle="light-content" backgroundColor="#24145f" />
             <Header />
             <View style={style.menu}>
                 <Menu title='Jerseys' />
                 <Menu title='Men' />
                 <Menu title='Women' />
                 <Menu title='More' />
-                <Menu title={<Ionicons name="search" size={24} color="white" />}/> 
+                <Menu title={<Ionicons name="search" size={24} color="white" />} />
             </View>
             <ScrollView>
                 <Banner1 />
@@ -46,8 +47,8 @@ export default function Home() {
                     <Card number='#89' style={style.cardText} />
                 </View>
                 <Assurance />
-                </ScrollView>
-                <Footer/>
+            </ScrollView>
+            <Footer />
         </View>
     );
 }
