@@ -49,6 +49,38 @@ export const style = StyleSheet.create({
         height: 164,
         backgroundColor: '#997610'
     },
+    product1: {
+        resizeMode: 'contain',
+        height: 182,
+        marginBottom: 50,
+    },
+    product2: {
+        resizeMode: 'contain',
+        height: 197,
+    },
+    product3: {
+        resizeMode: 'contain',
+        height: 280,
+        marginBottom: 40,
+    },
+    product4: {
+        resizeMode: 'contain',
+        height: 286,
+        marginBottom: 40,
+    },
+    product5: {
+        resizeMode: 'contain',
+        height: 141,
+        marginBottom: 40,
+    },
+    merchan1: {
+        resizeMode: 'contain',
+        height: 197,
+    },
+    merchan2: {
+        resizeMode: 'contain',
+        height: 149,
+    },
     bannerImage: {
         justifyContent: 'center',
         height: '100%',
@@ -113,6 +145,23 @@ export const style = StyleSheet.create({
         resizeMode: 'contain',
         marginTop: 30,
         height: 140,
+    },
+    about: {
+        marginTop: 20,
+        maxHeight: 200,
+        padding: 10,
+    },
+    aboutTitle: {
+        marginBottom: 25,
+        textAlign: 'center',
+        fontSize: 40,
+        fontFamily: 'OpenSans_400Regular',
+    },
+    aboutText: {
+        textAlign: 'justify',
+        fontSize: 17,
+        fontFamily: 'OpenSans_400Regular',
+        padding: 20,
     },
     footer: {
         flexDirection: 'row',

@@ -12,6 +12,14 @@ import Assurance from '../../components/Assurance';
 import Footer from '../../components/Footer.jsx';
 import { Ionicons } from '@expo/vector-icons';
 import StatusBar from '../../components/StatusBar';
+import Product1 from '../../components/Product1';
+import Product2 from '../../components/Product2';
+import Product3 from '../../components/Product3';
+import Product4 from '../../components/Product4';
+import Product5 from '../../components/Product5';
+import Merchandising1 from '../../components/Merchandising1';
+import Merchandising2 from '../../components/Merchandising2';
+import About from '../../components/About';
 
 export default function Home() {
     return (
@@ -25,18 +33,25 @@ export default function Home() {
                 <Menu title='More' />
                 <Menu title={<Ionicons name="search" size={24} color="white" />} />
             </View>
-            <ScrollView>
+            <ScrollView >
                 <Banner1 />
                 <Banner2 />
+                <Product1 />
+                <Product2 />
                 <View style={style.categories}>
                     <Button title='NEW ARRIVALS' />
                     <Button title='BEST SELLERS' />
                     <Button title='EXTENDED SIZING' />
                     <Button title='VIEW ALL' />
                 </View>
+                <Product3 />
+                <Product4 />
+                <Merchandising1 />
                 <View style={style.highlight}>
                     <Text style={style.highlight}>SHOP BY BRAND</Text>
                 </View>
+                <Product5 />
+                <Merchandising2 />
                 <View style={style.highlight}>
                     <Text style={style.highlight}>SHOP BY PLAYER</Text>
                 </View>
@@ -47,6 +62,7 @@ export default function Home() {
                     <Card number='#89' style={style.cardText} />
                 </View>
                 <Assurance />
+                <About />
             </ScrollView>
             <Footer />
         </View>

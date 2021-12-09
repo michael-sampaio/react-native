@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Image, View, StyleSheet, ActivityIndicator } from 'react-native';
 import axios from 'axios';
 import gato from './assets/gato.jpg';
@@ -18,14 +18,17 @@ export default function App() {
     }).then((response) => {
       setApiData(response.data[0].url)
     });
-    console.log("TERMINEI A FUNÇÃO")
   };
+
+  useEffect(( ) => {
+    handleClick();
+  }, []);
 
   return ( 
     <View style = {styles.container} >
       <View style = {styles.imgContainer} >
         <Image 
-          source={apiData ? { uri: apiData } : gato}
+          source={{ uri: apiData }}
           style={styles.img}  
           resizeMode='contain' 
           onLoadEnd={() => setLoading(false)} 
