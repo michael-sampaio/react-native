@@ -16,7 +16,6 @@ import { Ionicons } from '@expo/vector-icons';
 export default function Home() {
     return (
         <View style={styles.container}>
-            <StatusBar style={styles.statusBar} />
             <Header />
             <View style={style.menu}>
                 <Menu title='Jerseys' />
