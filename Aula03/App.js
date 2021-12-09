@@ -49,19 +49,28 @@ import { View } from 'react-native';
 
 const App = () => {
   return (
-    <View style={{ flex: 1, flexWrap: 'wrap', flexDirection: "row", justifyContent:"space-evenly", alignContent: 'space-around' }}>
-      <View style={{ height: 100, width: 100, backgroundColor: "yellow" }} />
-      <View style={{ height: 100, width: 100, backgroundColor: "yellow" }} />
-      <View style={{ height: 100, width: 100, backgroundColor: "yellow" }} />
-      <View style={{ height: 100, width: 100, backgroundColor: "green" }} />
-      <View style={{ height: 100, width: 100, backgroundColor: "green" }} />
-      <View style={{ height: 100, width: 100, backgroundColor: "green" }} />
-      <View style={{ height: 100, width: 100, backgroundColor: "red" }} />
-      <View style={{ height: 100, width: 100, backgroundColor: "red" }} />
-      <View style={{ height: 100, width: 100, backgroundColor: "red" }} />
-      <View style={{ height: 100, width: 100, backgroundColor: "blue" }} />
-      <View style={{ height: 100, width: 100, backgroundColor: "blue" }} />
-      <View style={{ height: 100, width: 100, backgroundColor: "blue" }} />
+    <View style={{flex: 1}}>
+      <View style= {{flex: 1}} >
+      <View style={{height: 20, backgroundColor: 'blue'}}/>
+        <View style={{flex: 3.5, marginTop: 20, alignItems: 'center'}}>
+        <View style={{height: 100, width: 100, backgroundColor: 'red'}}/>
+        <View style={{marginTop: 20, height: 40, width: 160, backgroundColor: 'red'}}/>
+      </View>
+      <View style={{flex: 1.5, flexWrap: 'wrap', flexDirection: 'row'}}>
+        <View style={{height: 60, width: '50%', backgroundColor: 'yellow'}}/>
+        <View style={{height: 60, width: '50%', backgroundColor: 'green'}}/>
+        <View style={{height: 15, width: '100%', backgroundColor: 'purple'}}/>
+      </View>
+      <View style={{ flex: 4.5, flexWrap: 'wrap', flexDirection: "row", justifyContent: 'space-around', alignContent: 'space-around', alignSelf: 'center'}}>
+        <View style={{ height: 92, width: 92, backgroundColor: "pink" }} />
+        <View style={{ height: 92, width: 92, backgroundColor: "pink" }} />
+        <View style={{ height: 92, width: 92, backgroundColor: "pink" }} />
+        <View style={{ height: 92, width: 92, backgroundColor: "pink" }} />
+        <View style={{ height: 92, width: 92, backgroundColor: "pink" }} />
+        <View style={{ height: 92, width: 92, backgroundColor: "pink" }} />
+      </View>
+      <View style={{flex: 1, backgroundColor:'white'}}/>
+      </View>
     </View>
   );
 };

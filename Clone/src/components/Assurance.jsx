@@ -4,7 +4,7 @@ import { style } from './componentStyles';
 
 const Assurance = () => {
     return (
-        <Pressable style={style.assurance} >
+        <Pressable style={style.assuranceBanner} >
             <Image style={style.bannerImage}
                 source={require('../../assets/assurance.png')}
             />

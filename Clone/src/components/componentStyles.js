@@ -62,7 +62,7 @@ export const style = StyleSheet.create({
         marginBottom: 20,
         justifyContent: "space-evenly",
     },
-    button: {
+    categoriesButton: {
         width: '40%',
         height: '40%',
         marginBottom: 20,
@@ -76,7 +76,7 @@ export const style = StyleSheet.create({
         borderWidth: 5,
         borderColor: '#997610',
     },
-    text: {
+    categoriesText: {
         fontSize: 14,
         fontWeight: 'bold',
         fontStyle: 'italic',
@@ -109,7 +109,7 @@ export const style = StyleSheet.create({
         color: '#20174e',
         fontFamily: 'OpenSans_400Regular',
     },
-    assurance: {
+    assuranceBanner: {
         resizeMode: 'contain',
         marginTop: 30,
         height: 140,
